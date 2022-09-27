@@ -838,7 +838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Selamat datang\r</b>\nAugmented reality Sirkulasi Darah"
+  m_text: "<b>Selamat Datang\r</b>\nAugmented Reality Sirkulasi Darah"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0878e609e3f388941891696c12cc1e10, type: 2}
   m_sharedMaterial: {fileID: 4998223935070513180, guid: 0878e609e3f388941891696c12cc1e10, type: 2}
@@ -2737,8 +2737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 215.14674, y: 0}
-  m_SizeDelta: {x: 390.2935, y: 0}
+  m_AnchoredPosition: {x: 208.31494, y: 0}
+  m_SizeDelta: {x: 376.62988, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668172133
 MonoBehaviour:

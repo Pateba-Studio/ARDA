@@ -1,5 +1,27 @@
 {
   "dependencies": {
+    "com.easyar.sense": {
+      "version": "file:C:/Users/farhn/Downloads/Compressed/com.easyar.sense-4.5.0+2500.38660d14.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
+    },
+    "com.ptc.vuforia.engine": {
+      "version": "file:com.ptc.vuforia.engine-10.10.2.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.device-simulator": {
       "version": "3.0.3-preview",
       "depth": 0,
