@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2755397
 MonoBehaviour:
@@ -272,6 +272,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2755395}
   m_CullTransparentMesh: 1
+--- !u!1 &6987885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6987886}
+  - component: {fileID: 6987889}
+  - component: {fileID: 6987888}
+  - component: {fileID: 6987887}
+  m_Layer: 5
+  m_Name: Button Retry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6987886
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -63, y: 90}
+  m_SizeDelta: {x: 52, y: 55}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6987887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6987888}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1219540739}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: TesScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6987888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 876f26a33cf5e824f885cd59f85feaa9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &6987889
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987885}
+  m_CullTransparentMesh: 1
 --- !u!1 &354137529
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 354137530}
   m_Layer: 5
-  m_Name: Body Group
+  m_Name: Quiz UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,6 +440,155 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &461001736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461001737}
+  - component: {fileID: 461001740}
+  - component: {fileID: 461001739}
+  - component: {fileID: 461001738}
+  m_Layer: 5
+  m_Name: Text Title Selamat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &461001737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461001736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -142}
+  m_SizeDelta: {x: -74, y: 77.46}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &461001738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461001736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &461001739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461001736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Selamat '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 64
+  m_fontSizeBase: 64
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &461001740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461001736}
+  m_CullTransparentMesh: 1
 --- !u!1 &465320958
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,8 +624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465320960
 MonoBehaviour:
@@ -579,6 +860,8 @@ GameObject:
   - component: {fileID: 529845173}
   - component: {fileID: 529845172}
   - component: {fileID: 529845177}
+  - component: {fileID: 529845178}
+  - component: {fileID: 529845179}
   m_Layer: 5
   m_Name: Answer Container B
   m_TagString: Untagged
@@ -603,8 +886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529845172
 MonoBehaviour:
@@ -742,7 +1025,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 529845175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529845178}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &529845178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529845170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2c11d61e54dda4abb1ecc6cb526bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1511330050}
+--- !u!114 &529845179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529845170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &595909509
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +1147,155 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &642188394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642188395}
+  - component: {fileID: 642188397}
+  - component: {fileID: 642188396}
+  - component: {fileID: 642188398}
+  m_Layer: 5
+  m_Name: Text Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &642188395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642188394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1258431299}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -24.5, y: 0}
+  m_SizeDelta: {x: -111, y: -73.81}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &642188396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642188394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 100
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 96
+  m_fontSizeBase: 96
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &642188397
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642188394}
+  m_CullTransparentMesh: 1
+--- !u!114 &642188398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642188394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &719961821
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +1307,7 @@ GameObject:
   - component: {fileID: 719961822}
   - component: {fileID: 719961823}
   - component: {fileID: 719961824}
+  - component: {fileID: 719961825}
   m_Layer: 5
   m_Name: Answer Group
   m_TagString: Untagged
@@ -865,8 +1336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 215.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719961823
 MonoBehaviour:
@@ -908,6 +1379,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &719961825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719961821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &731880727
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +1402,7 @@ GameObject:
   - component: {fileID: 731880728}
   - component: {fileID: 731880730}
   - component: {fileID: 731880729}
+  - component: {fileID: 731880731}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -987,6 +1471,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &731880731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731880727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &734248430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1564,8 @@ GameObject:
   - component: {fileID: 810944724}
   - component: {fileID: 810944723}
   - component: {fileID: 810944728}
+  - component: {fileID: 810944729}
+  - component: {fileID: 810944730}
   m_Layer: 5
   m_Name: Answer Container D
   m_TagString: Untagged
@@ -1092,8 +1590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810944723
 MonoBehaviour:
@@ -1231,7 +1729,177 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 810944726}
   m_OnClick:
     m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 810944729}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &810944729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810944721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2c11d61e54dda4abb1ecc6cb526bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1511330050}
+--- !u!114 &810944730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810944721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &901359964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901359965}
+  - component: {fileID: 901359968}
+  - component: {fileID: 901359967}
+  - component: {fileID: 901359966}
+  m_Layer: 5
+  m_Name: Button Home
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &901359965
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901359964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 63, y: 90}
+  m_SizeDelta: {x: 52, y: 55}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &901359966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901359964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 901359967}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1219540739}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: HomeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &901359967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901359964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
       m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7830428e45037ed4dbc5eb7d363d2936, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &901359968
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901359964}
+  m_CullTransparentMesh: 1
 --- !u!1 &926219223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,8 +1935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926219225
 MonoBehaviour:
@@ -1417,8 +2085,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927780308
 MonoBehaviour:
@@ -1546,6 +2214,8 @@ GameObject:
   - component: {fileID: 963066489}
   - component: {fileID: 963066488}
   - component: {fileID: 963066493}
+  - component: {fileID: 963066494}
+  - component: {fileID: 963066495}
   m_Layer: 5
   m_Name: Answer Container A
   m_TagString: Untagged
@@ -1570,8 +2240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963066488
 MonoBehaviour:
@@ -1709,7 +2379,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 963066491}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963066494}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &963066494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963066486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2c11d61e54dda4abb1ecc6cb526bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1511330050}
+--- !u!114 &963066495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963066486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1044665991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +2433,8 @@ GameObject:
   - component: {fileID: 1044665994}
   - component: {fileID: 1044665993}
   - component: {fileID: 1044665998}
+  - component: {fileID: 1044665999}
+  - component: {fileID: 1044666000}
   m_Layer: 5
   m_Name: Answer Container C
   m_TagString: Untagged
@@ -1749,8 +2459,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044665993
 MonoBehaviour:
@@ -1888,7 +2598,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1044665996}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1044665999}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1044665999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044665991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2c11d61e54dda4abb1ecc6cb526bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1511330050}
+--- !u!114 &1044666000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044665991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1078063716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +2652,8 @@ GameObject:
   - component: {fileID: 1078063719}
   - component: {fileID: 1078063718}
   - component: {fileID: 1078063723}
+  - component: {fileID: 1078063724}
+  - component: {fileID: 1078063725}
   m_Layer: 5
   m_Name: Answer Container E
   m_TagString: Untagged
@@ -1928,8 +2678,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1078063718
 MonoBehaviour:
@@ -2067,7 +2817,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1078063721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1078063724}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1078063724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078063716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2c11d61e54dda4abb1ecc6cb526bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1511330050}
+--- !u!114 &1078063725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078063716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079956292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2931,334 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079956292}
   m_CullTransparentMesh: 1
+--- !u!1 &1108797316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108797317}
+  - component: {fileID: 1108797320}
+  - component: {fileID: 1108797319}
+  - component: {fileID: 1108797318}
+  m_Layer: 5
+  m_Name: Text Salah Count
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1108797317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108797316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -565}
+  m_SizeDelta: {x: -74, y: 78.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1108797318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108797316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1108797319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108797316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1108797320
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108797316}
+  m_CullTransparentMesh: 1
+--- !u!1 &1219540737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219540738}
+  - component: {fileID: 1219540739}
+  m_Layer: 0
+  m_Name: Scene Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219540738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219540737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219540739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219540737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f39afa8e7379e4bafb9dac86b0c1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1258431298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258431299}
+  - component: {fileID: 1258431302}
+  - component: {fileID: 1258431301}
+  - component: {fileID: 1258431300}
+  m_Layer: 5
+  m_Name: Image Card Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1258431299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258431298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 642188395}
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -329}
+  m_SizeDelta: {x: -40, y: 190}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1258431300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258431298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8714c362c0c8a6449a9559a31cdab9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 30
+--- !u!114 &1258431301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258431298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f1c5417c9d7ab4b84e531f83f60a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.30588236, g: 0.45490196, b: 0.9764706, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3f91331724a9da84197e9b6d94f0483c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  borderWidth: 0
+  falloffDistance: 1
+--- !u!222 &1258431302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258431298}
+  m_CullTransparentMesh: 1
+--- !u!1 &1323853739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323853740}
+  m_Layer: 5
+  m_Name: Result Quiz UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1323853740
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323853739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 461001737}
+  - {fileID: 1809400415}
+  - {fileID: 1258431299}
+  - {fileID: 2009493116}
+  - {fileID: 1720720593}
+  - {fileID: 1539978047}
+  - {fileID: 1108797317}
+  - {fileID: 901359965}
+  - {fileID: 6987886}
+  m_Father: {fileID: 1885864055}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1511330048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,7 +3270,7 @@ GameObject:
   - component: {fileID: 1511330049}
   - component: {fileID: 1511330050}
   m_Layer: 0
-  m_Name: Tes Data
+  m_Name: Quiz Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,341 +3299,251 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511330048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e111d1041f625e4193b5e90fd470fec, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ac70d2dbdecdac45b035ddf382fddf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionString: {fileID: 926219226}
-  buttonA: {fileID: 963066486}
-  buttonB: {fileID: 529845170}
-  buttonC: {fileID: 1044665991}
-  buttonD: {fileID: 810944721}
-  buttonE: {fileID: 1078063716}
-  questionDatas:
+  questionText: {fileID: 926219226}
+  answerHolder:
+  - {fileID: 963066486}
+  - {fileID: 529845170}
+  - {fileID: 1044665991}
+  - {fileID: 810944721}
+  - {fileID: 1078063716}
+  quizPanel: {fileID: 354137529}
+  resultPanel: {fileID: 1323853739}
+  scoreText: {fileID: 642188396}
+  correctAnswerText: {fileID: 1539978049}
+  wrongAnswerText: {fileID: 1108797319}
+  wrongAnswerCounter: 0
+  correctAnswerCounter: 0
+  questionData:
   - question: "1. Sistem peredaran darah pada manusia adalah sistem peredaran darah
       ganda, karena\u2026."
-    data:
-    - answer: 'darah mengalir di dalam pembuluh darah dan jantung '
-      isTrue: 0
-    - answer: 'darah mengalir dua kali melewati jantung dalam satu peredaran '
-      isTrue: 1
-    - answer: 'darah dapat mengalami perubahan asam-basa '
-      isTrue: 0
-    - answer: 'darah mengalir melewati jantung dan paru-paru '
-      isTrue: 0
-    - answer: 'darah mengalami siklus pulmonal dan sistemik '
-      isTrue: 0
+    answer:
+    - darah mengalir di dalam pembuluh darah dan jantung
+    - 'darah mengalir dua kali melewati jantung dalam satu peredaran '
+    - 'darah dapat mengalami perubahan asam-basa '
+    - darah mengalir melewati jantung dan paru-paru
+    - darah mengalami siklus pulmonal dan sistemik
+    correctAnswer: 2
   - question: "2. Pernyataan di bawah ini adalah fungsi sistem sirkulasi pada manusia,
       kecuali\u2026."
-    data:
-    - answer: mengangkut zat nutrisi ke seluruh jaringan tubuh
-      isTrue: 0
-    - answer: menghantarkan rangsang ke organ organ tubuh
-      isTrue: 1
-    - answer: mengatur suhu tubuh
-      isTrue: 0
-    - answer: mengangkut sisa sisa metabolisme ke alat pengeluaran
-      isTrue: 0
-    - answer: mengedarkan oksigen ke keseluruh jaringan tubuh
-      isTrue: 0
+    answer:
+    - mengangkut zat nutrisi ke seluruh jaringan tubuh
+    - menghantarkan rangsang ke organ organ tubuhmenghantarkan rangsang ke organ
+      organ tubuh
+    - mengatur suhu tubuh
+    - mengangkut sisa sisa metabolisme ke alat pengeluaran
+    - mengedarkan oksigen ke keseluruh jaringan tubuh
+    correctAnswer: 2
   - question: "3. Komponen darah yang memiliki jumlah paling banyak adalah\u2026."
-    data:
-    - answer: Eritrosit
-      isTrue: 0
-    - answer: leukosit
-      isTrue: 0
-    - answer: plasma darah
-      isTrue: 1
-    - answer: trombosit
-      isTrue: 0
-    - answer: keping darah
-      isTrue: 0
-  - question: 4. Seorang anak yang terkena gigitan nyamuk Aedes aegypti (italic)
+    answer:
+    - 'Eritrosit '
+    - 'leukosit '
+    - plasma darah
+    - 'trombosit '
+    - 'keping darah '
+    correctAnswer: 3
+  - question: '4. Seorang anak yang terkena gigitan nyamuk Aedes aegypti (italic)
       positif terinfeksi virus dengue. Virus ini menyerang sistem peredaran darah
-      yang akan mengakibatkan....
-    data:
-    - answer: kadar hemoglobin dalam darah berkurang
-      isTrue: 0
-    - answer: produksi eritrosit meningkat
-      isTrue: 0
-    - answer: jumlah trombosit berkurang
-      isTrue: 1
-    - answer: elastisitas arteri meningkat
-      isTrue: 0
-    - answer: jumlah leukosit meningkat
-      isTrue: 0
+      yang akan mengakibatkan.... '
+    answer:
+    - kadar hemoglobin dalam darah berkurang
+    - produksi eritrosit meningkat
+    - jumlah trombosit berkurang
+    - elastisitas arteri meningkat
+    - jumlah leukosit meningkat
+    correctAnswer: 3
   - question: "5. Protein dalam plasma darah yang akan digunakan membentuk zat yang
       meningkatkan imunitas tubuh yaitu\u2026."
-    data:
-    - answer: albumin
-      isTrue: 0
-    - answer: heme
-      isTrue: 0
-    - answer: fibrinogen
-      isTrue: 0
-    - answer: globulin
-      isTrue: 1
-    - answer: hormon
-      isTrue: 0
+    answer:
+    - albumin
+    - heme
+    - fibrinogen
+    - 'globulin '
+    - hormon
+    correctAnswer: 4
   - question: "6. Eritrosit yang sudah tua akan di hancurkan oleh hati atau limfa.
       Hemoglobin yang terdapat dalam eritrosit akan di ubah menjadi\u2026."
-    data:
-    - answer: urin
-      isTrue: 0
-    - answer: 'protein '
-      isTrue: 0
-    - answer: 'bilirubin '
-      isTrue: 1
-    - answer: 'empedu '
-      isTrue: 0
-    - answer: getah bening
-      isTrue: 0
-  - question: "7. Serum adalah plasma darah yang tidak mengandung protein\u2026."
-    data:
-    - answer: fibrinogen
-      isTrue: 1
-    - answer: 'lipid '
-      isTrue: 0
-    - answer: 'albumin '
-      isTrue: 0
-    - answer: 'globulin '
-      isTrue: 0
-    - answer: aglutinogen
-      isTrue: 0
+    answer:
+    - urin
+    - protein
+    - bilirubin
+    - empedu
+    - getah bening
+    correctAnswer: 3
+  - question: "7. Serum adalah plasma darah yang tidak mengandung protein\u2026. "
+    answer:
+    - fibrinogen
+    - lipid
+    - albumin
+    - globulin
+    - aglutinogen
+    correctAnswer: 1
   - question: "8. Sel darah putih pada tubuh manusia yang memiliki peranan ketika
       terjadi alergi adalah\u2026."
-    data:
-    - answer: granulosit
-      isTrue: 0
-    - answer: basofil
-      isTrue: 1
-    - answer: limfosit
-      isTrue: 0
-    - answer: eosinofil
-      isTrue: 0
-    - answer: neutrofil
-      isTrue: 0
+    answer:
+    - granulosit
+    - basofil
+    - limfosit
+    - eosinofil
+    - neutrofil
+    correctAnswer: 2
   - question: "9. Zat-zat berikut ini berperan dalam proses pembekuan darah, kecuali
       \u2026."
-    data:
-    - answer: hemoglobin
-      isTrue: 0
-    - answer: ion kalsium
-      isTrue: 1
-    - answer: fibrinogen
-      isTrue: 0
-    - answer: thrombin
-      isTrue: 0
-    - answer: vitamin K
-      isTrue: 0
-  - question: "10. Zat yang menentukan golongan darah manusia adalah\u2026."
-    data:
-    - answer: antigen dan antitoksin
-      isTrue: 0
-    - answer: aglutinin dan eritrosit
-      isTrue: 0
-    - answer: aglutinin dan aglutinogen
-      isTrue: 1
-    - answer: aglutinogen dan eritrosit
-      isTrue: 0
-    - answer: 'aglutinin dan leukosit '
-      isTrue: 0
+    answer:
+    - hemoglobin
+    - ion kalsium
+    - 'fibrinogen '
+    - 'thrombin '
+    - 'vitamin K '
+    correctAnswer: 2
+  - question: "10. Zat yang menentukan golongan darah manusia adalah\u2026. "
+    answer:
+    - antigen dan antitoksin
+    - aglutinin dan eritrosit
+    - 'aglutinin dan aglutinogen '
+    - 'aglutinogen dan eritrosit '
+    - aglutinin dan leukosit
+    correctAnswer: 3
   - question: "11. Golongan darah AB adalah seseorang yang memiliki\u2026."
-    data:
-    - answer: agglutinin alfa dan aglutinogen beta
-      isTrue: 0
-    - answer: agglutinin beta dan aglutinogen alfa
-      isTrue: 0
-    - answer: tidak memiliki agglutinin
-      isTrue: 1
-    - answer: memiliki aglutinogen alfa dan beta
-      isTrue: 0
-    - answer: tidak memiliki agglutinin dan aglutinogen
-      isTrue: 0
+    answer:
+    - agglutinin alfa dan aglutinogen beta
+    - agglutinin beta dan aglutinogen alfa
+    - tidak memiliki agglutinin
+    - memiliki aglutinogen alfa dan beta
+    - 'tidak memiliki agglutinin dan aglutinogen '
+    correctAnswer: 3
   - question: "12. Apabila seoarang ayah memiliki golongan darah O dan Ibu memiliki
-      golongan darah AB, maka kemungkinan anaknya akan memiliki golongan darah\u2026."
-    data:
-    - answer: O atau AB
-      isTrue: 0
-    - answer: O, A atau B
-      isTrue: 1
-    - answer: AB atau B
-      isTrue: 0
-    - answer: AB atau O
-      isTrue: 0
-    - answer: 'AB saja '
-      isTrue: 0
+      golongan darah AB, maka kemungkinan anaknya akan memiliki golongan darah\u2026. "
+    answer:
+    - O atau AB
+    - O, A atau B
+    - 'AB atau B '
+    - AB atau O
+    - AB saja
+    correctAnswer: 2
   - question: "13. Dalam sistem peredaran darah manusia dikenal adanya tiga pembuluh
       darah, yaitu arteri, vena, dan kapiler. Pernyataan berikut ini yang berkaitan
       dengan pembuluh darah vena adalah\u2026."
-    data:
-    - answer: mengangkut darah yang kaya oksigen
-      isTrue: 0
-    - answer: membawa darah meninggalkan jantung
-      isTrue: 0
-    - answer: mengangkut darah yang kaya karbondoiksida
-      isTrue: 0
-    - answer: membawa darah menuju jantung
-      isTrue: 1
-    - answer: mengangkut darah yang kaya karbondioksida dan menuju jantung
-      isTrue: 0
+    answer:
+    - mengangkut darah yang kaya oksigen
+    - membawa darah meninggalkan jantung
+    - 'mengangkut darah yang kaya karbondoiksida '
+    - 'membawa darah menuju jantung '
+    - mengangkut darah yang kaya karbondioksida dan menuju jantung
+    correctAnswer: 4
   - question: "14. Pembuluh darah yang membawa darah kaya akan karbon dioksida dari
       ventrikel kanan ke paru-paru disebut\u2026."
-    data:
-    - answer: arteri pulmonalis
-      isTrue: 1
-    - answer: vena cava superior
-      isTrue: 0
-    - answer: vena pulmonalis
-      isTrue: 0
-    - answer: vena cava inferior
-      isTrue: 0
-    - answer: aorta
-      isTrue: 0
+    answer:
+    - arteri pulmonalis
+    - 'vena cava superior '
+    - vena pulmonalis
+    - 'vena cava inferior '
+    - 'aorta '
+    correctAnswer: 1
   - question: "15. Otot jantung bekerja secara ritmik, sehingga perlu mendapatkan
       oksigen dan zat-zat makanan. Pembuluh darah yang mengalirkan darah dari paru-paru
-      ke atrium kiri dengan membawa oksigen dan zat makanan adalah\u2026."
-    data:
-    - answer: arteri pulmonalis
-      isTrue: 0
-    - answer: arteri koronaria
-      isTrue: 0
-    - answer: vena kava superior
-      isTrue: 0
-    - answer: vena pulmonalis
-      isTrue: 1
-    - answer: vena hepatica
-      isTrue: 0
+      ke atrium kiri dengan membawa oksigen dan zat makanan adalah\u2026. "
+    answer:
+    - arteri pulmonalis
+    - 'arteri koronaria '
+    - vena kava superior
+    - vena pulmonalis
+    - vena hepatica
+    correctAnswer: 4
   - question: "16. Di antara pembuluh darah berikut yang darahnya kaya oksigen adalah\u2026."
-    data:
-    - answer: vena dari hati
-      isTrue: 0
-    - answer: vena dari ginjal
-      isTrue: 0
-    - answer: vena dari paru paru
-      isTrue: 1
-    - answer: vena dari usus
-      isTrue: 0
-    - answer: vena dari jantung
-      isTrue: 0
+    answer:
+    - vena dari hati
+    - vena dari ginjal
+    - 'vena dari paru paru '
+    - vena dari usus
+    - 'vena dari jantung '
+    correctAnswer: 3
   - question: "17. Pada sistem peredaran darah manusia, atrium kiri menerima darah
       dari\u2026."
-    data:
-    - answer: seluruh jaringan tubuh dan berisi karbon dioksida
-      isTrue: 0
-    - answer: paru-paru yang mengandung banyak oksigen
-      isTrue: 1
-    - answer: kepala dan tungkai depan serta membawa karbondioksida
-      isTrue: 0
-    - answer: paru-paru dan kulit serta membawa karbon dioksida
-      isTrue: 0
-    - answer: tubuh bagian belakang dan mengangkut oksigen
-      isTrue: 0
+    answer:
+    - seluruh jaringan tubuh dan berisi karbon dioksida
+    - paru-paru yang mengandung banyak oksigen
+    - kepala dan tungkai depan serta membawa karbondioksidakepala dan tungkai depan
+      serta membawa karbondioksida
+    - paru-paru dan kulit serta membawa karbon dioksida
+    - tubuh bagian belakang dan mengangkut oksigen
+    correctAnswer: 2
   - question: 18. Katup jantung yang memisahkan atrium kiri dengan ventrikel kiri
       disebut....
-    data:
-    - answer: foramen ovale
-      isTrue: 0
-    - answer: katub bikuspidalis
-      isTrue: 1
-    - answer: septum intetatrial
-      isTrue: 0
-    - answer: katub semilunaris
-      isTrue: 0
-    - answer: katub trikuspidalis
-      isTrue: 0
+    answer:
+    - foramen ovale
+    - katub bikuspidalis
+    - septum intetatrial
+    - katub semilunaris
+    - katub trikuspidalis
+    correctAnswer: 2
   - question: 19. Tekanan ketika kekuatan darah mendorong dinding arteri ketika ventrikel
       berelaksasi disebut....
-    data:
-    - answer: denyut nadi
-      isTrue: 0
-    - answer: diastole
-      isTrue: 1
-    - answer: sistole
-      isTrue: 0
-    - answer: detak jantung
-      isTrue: 0
-    - answer: tensi
-      isTrue: 0
+    answer:
+    - denyut nadi
+    - diastole
+    - 'sistole '
+    - 'detak jantung '
+    - tensi
+    correctAnswer: 2
   - question: "20. Wajah Meri selalu terlihat pucat, tubuhnya lesu, dan hasil uji
       laboratium menunjukan kadar hemoglobinnya berada di bawah normal. Meri diduga
       menderita\u2026."
-    data:
-    - answer: anemia
-      isTrue: 1
-    - answer: 'leukimia '
-      isTrue: 0
-    - answer: hipotensi
-      isTrue: 0
-    - answer: embolus
-      isTrue: 0
-    - answer: hemofilia
-      isTrue: 0
+    answer:
+    - anemia
+    - leukimia
+    - hipotensi
+    - embolus
+    - hemofilia
+    correctAnswer: 1
   - question: 21. Kelainan pecah dan rusaknya sel darah merah pada bayi akibat berbedaan
       rhesus antara ibu dan bayi disebut....
-    data:
-    - answer: trombus
-      isTrue: 0
-    - answer: anemia
-      isTrue: 0
-    - answer: hemoroid
-      isTrue: 0
-    - answer: eritoblastosis fetalis
-      isTrue: 1
-    - answer: embolus
-      isTrue: 0
+    answer:
+    - trombus
+    - anemia
+    - hemoroid
+    - 'eritoblastosis fetalis '
+    - embolus
+    correctAnswer: 4
   - question: "22. Gangguan pada pembuluh nadi yang mengalami penyumbatan akibatkan
       endapan lemak disebut\u2026."
-    data:
-    - answer: trombus
-      isTrue: 0
-    - answer: embolus
-      isTrue: 0
-    - answer: aterosklerosis
-      isTrue: 1
-    - answer: arterosklerosis
-      isTrue: 0
-    - answer: hemoroid
-      isTrue: 0
+    answer:
+    - trombus
+    - embolus
+    - aterosklerosis
+    - arterosklerosis
+    - hemoroid
+    correctAnswer: 3
   - question: "23. Teknik untuk membuka sumbatan timbunan lemak dalam pembuluh darah
       dengan menggunakan kateter yang dilengkapi dengan balon disebut\u2026."
-    data:
-    - answer: pacemaker
-      isTrue: 0
-    - answer: transplantasi
-      isTrue: 0
-    - answer: operasi bypass
-      isTrue: 0
-    - answer: ekokardiograf
-      isTrue: 0
-    - answer: angioplasti
-      isTrue: 1
+    answer:
+    - pacemaker
+    - transplantasi
+    - operasi bypass
+    - ekokardiograf
+    - angioplasti
+    correctAnswer: 5
   - question: "24. Suatu teknik untuk menumbuhkan pembuluh darah baru, dengan cara
       menyuntikkan beberapa salinan gen yang mengkode VEGF (vascular endhothelia
       growth factor) disebut\u2026."
-    data:
-    - answer: terapi gen
-      isTrue: 1
-    - answer: kultur jaringan
-      isTrue: 0
-    - answer: echocardiography
-      isTrue: 0
-    - answer: 'coronary artery bypass graft '
-      isTrue: 0
-    - answer: transplantasi
-      isTrue: 0
+    answer:
+    - terapi gen
+    - kultur jaringan
+    - echocardiography
+    - coronary artery bypass graft
+    - transplantasi
+    correctAnswer: 1
   - question: 25. Bayi yang masih di dalam kandungan akan mendapatkan oksigen dan
       nutrisi dari plasenta melalui tali pusar bagian....
-    data:
-    - answer: duktus venosus
-      isTrue: 0
-    - answer: arteri umbilikal
-      isTrue: 0
-    - answer: vena umbilikal
-      isTrue: 1
-    - answer: arteri pulmonal
-      isTrue: 0
-    - answer: foramen ovale
-      isTrue: 0
+    answer:
+    - duktus venosus
+    - arteri umbilikal
+    - vena umbilikal
+    - arteri pulmonal
+    - foramen ovale
+    correctAnswer: 3
 --- !u!1 &1524148256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +3637,453 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1539978046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539978047}
+  - component: {fileID: 1539978050}
+  - component: {fileID: 1539978049}
+  - component: {fileID: 1539978048}
+  m_Layer: 5
+  m_Name: Text Benar Count
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1539978047
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539978046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -565}
+  m_SizeDelta: {x: -74, y: 78.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1539978048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539978046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1539978049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539978046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1539978050
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539978046}
+  m_CullTransparentMesh: 1
+--- !u!1 &1720720592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720720593}
+  - component: {fileID: 1720720596}
+  - component: {fileID: 1720720595}
+  - component: {fileID: 1720720594}
+  m_Layer: 5
+  m_Name: Text Salah
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1720720593
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720720592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -501}
+  m_SizeDelta: {x: -74, y: 25.42}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1720720594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720720592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1720720595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720720592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Salah
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 21
+  m_fontSizeBase: 21
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1720720596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720720592}
+  m_CullTransparentMesh: 1
+--- !u!1 &1809400414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809400415}
+  - component: {fileID: 1809400418}
+  - component: {fileID: 1809400417}
+  - component: {fileID: 1809400416}
+  m_Layer: 5
+  m_Name: Text Title Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1809400415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809400414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -199}
+  m_SizeDelta: {x: -74, y: 25.42}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1809400416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809400414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1809400417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809400414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Hasil Tes Formatif kamu :'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 21
+  m_fontSizeBase: 21
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1809400418
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809400414}
+  m_CullTransparentMesh: 1
 --- !u!1 &1885864051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +4177,7 @@ RectTransform:
   m_Children:
   - {fileID: 1079956293}
   - {fileID: 354137530}
+  - {fileID: 1323853740}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2747,8 +4221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915401257
 MonoBehaviour:
@@ -2860,6 +4334,155 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915401255}
+  m_CullTransparentMesh: 1
+--- !u!1 &2009493115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009493116}
+  - component: {fileID: 2009493119}
+  - component: {fileID: 2009493118}
+  - component: {fileID: 2009493117}
+  m_Layer: 5
+  m_Name: Text Benar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2009493116
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009493115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323853740}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -501}
+  m_SizeDelta: {x: -74, y: 25.42}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2009493117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009493115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &2009493118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009493115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Benar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_sharedMaterial: {fileID: 3255297962192070261, guid: f6f1f313fe835904ba81d5270fd588a3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 21
+  m_fontSizeBase: 21
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2009493119
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009493115}
   m_CullTransparentMesh: 1
 --- !u!1 &2051001929
 GameObject:
@@ -2986,8 +4609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 195.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079425923
 MonoBehaviour:
@@ -3114,6 +4737,7 @@ GameObject:
   - component: {fileID: 2094052508}
   - component: {fileID: 2094052512}
   - component: {fileID: 2094052511}
+  - component: {fileID: 2094052513}
   m_Layer: 5
   m_Name: Question Container
   m_TagString: Untagged
@@ -3138,8 +4762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 215.07735, y: 0}
+  m_SizeDelta: {x: 390.1547, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094052508
 MonoBehaviour:
@@ -3234,3 +4858,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &2094052513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094052506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0fb7954bfbd674cbbdb5ecabca3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

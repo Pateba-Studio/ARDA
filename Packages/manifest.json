@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.easyar.sense": "file:C:/Users/farhn/Downloads/Compressed/com.easyar.sense-4.5.0+2500.38660d14.tgz",
+    "com.easyar.sense": "file:C:/Users/darma/Downloads/EasyARSenseUnityPlugin_4.5.0+2500.38660d14/com.easyar.sense-4.5.0+2500.38660d14.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.device-simulator": "3.0.3-preview",
     "com.unity.ide.visualstudio": "2.0.16",
