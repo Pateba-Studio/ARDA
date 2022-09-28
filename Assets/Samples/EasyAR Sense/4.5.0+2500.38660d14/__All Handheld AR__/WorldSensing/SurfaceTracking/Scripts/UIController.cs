@@ -33,7 +33,7 @@ namespace SurfaceTracking
             {
                 if (state == ARSession.SessionState.Ready)
                 {
-                    TouchControl.TurnOn(TouchControl.transform, Session.Assembly.Camera, false, false, true, true);
+                    TouchControl.TurnOn(TouchControl.transform, Session.Assembly.Camera, false, true, false, true, false);
                 }
             };
 

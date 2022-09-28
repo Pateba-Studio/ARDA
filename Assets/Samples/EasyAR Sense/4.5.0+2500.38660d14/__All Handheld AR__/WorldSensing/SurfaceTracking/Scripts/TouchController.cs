@@ -20,6 +20,7 @@ namespace Common
         private Transform controlTarget;
         private Camera cameraTarget;
         private bool isOneFingerDraggable;
+        private bool isOneFingerRotatable;
         private bool isTwoFingerDraggable;
         private bool isTwoFingerScalable;
         private bool isTwoFingerRotatable;
@@ -31,6 +32,7 @@ namespace Common
         {
             NoTouch,
             OneMove,
+            OneRotate,
             TwoWait,
             TwoMove,
             TwoRotate,
@@ -116,7 +118,8 @@ namespace Common
                     }
                 }
             }
-            else if (curGesture == GestureControl.OneMove)
+            else if (curGesture == GestureControl.OneMove ||
+                     curGesture == GestureControl.OneRotate)
             {
                 if (Input.touchCount == 2)
                 {
@@ -139,6 +142,11 @@ namespace Common
                         StopAllCoroutines();
                         StartCoroutine(OnOneMove());
                     }
+                    if (isOneFingerRotatable)
+                    {
+                        StopAllCoroutines();
+                        StartCoroutine(OnOneRotate());
+                    }
                 }
                 else if (Input.touchCount == 2)
                 {
@@ -152,12 +160,13 @@ namespace Common
             }
         }
 
-        public void TurnOn(Transform target, Camera cam, bool isOneFingerDraggable, bool isTwoFingerDraggable, bool isTwoFingerScalable, bool isTwoFingerRotatable)
+        public void TurnOn(Transform target, Camera cam, bool isOneFingerDraggable, bool isOneFingerRotatable, bool isTwoFingerDraggable, bool isTwoFingerScalable, bool isTwoFingerRotatable)
         {
             StopAllCoroutines();
             controlTarget = target;
             cameraTarget = cam;
             this.isOneFingerDraggable = isOneFingerDraggable;
+            this.isOneFingerRotatable = isOneFingerRotatable;
             this.isTwoFingerDraggable = isTwoFingerDraggable;
             this.isTwoFingerScalable = isTwoFingerScalable;
             this.isTwoFingerRotatable = isTwoFingerRotatable;
@@ -216,6 +225,36 @@ namespace Common
 
                     var newPos = rawTargetPos + (Vector3.Dot(yMovement, Cam_Forward) > 0 ? Cam_Forward_XZ : -Cam_Forward_XZ) * yMovement.magnitude * targetCamDistance * 2 / 1000;
                     controlTarget.position = newPos;
+                }
+                yield return 0;
+            }
+        }
+
+        private IEnumerator OnOneRotate()
+        {
+            Vector3 xMovement;
+            Vector3 yMovement;
+            Quaternion rawRotation = controlTarget.rotation;
+            foreach (var touch in Input.touches)
+            {
+                originalPosition[touch.fingerId] = touch.position;
+            }
+
+            while (Input.touchCount == 1 && originalPosition.ContainsKey(Input.GetTouch(0).fingerId))
+            {
+                if (!controlTarget) { yield break; }
+                Vector2 fixedDelta = (Input.GetTouch(0).position - originalPosition[Input.GetTouch(0).fingerId]) * 0.5f / Screen.width * rotateSpeed;
+                GetRelativeTouch(fixedDelta, out xMovement, out yMovement);
+                if (xMovement != Vector3.zero)
+                {
+                    if (Vector3.Dot(Vector3.Cross(xMovement.normalized, Vector3.up), cameraTarget.transform.forward) < 0f)
+                    {
+                        controlTarget.rotation = rawRotation * Quaternion.Euler(0f, xMovement.sqrMagnitude / Mathf.PI, 0f);
+                    }
+                    else
+                    {
+                        controlTarget.rotation = rawRotation * Quaternion.Euler(0f, -xMovement.sqrMagnitude / Mathf.PI, 0f);
+                    }
                 }
                 yield return 0;
             }

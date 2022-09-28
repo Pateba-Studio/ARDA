@@ -9,81 +9,21 @@ using System.Reflection;
 
 public class ARManager : MonoBehaviour
 {
-    public bool isGrounded;
-    public string planeUsed;
-
-    [Space(25)]
-    public GameObject planeTarget;
-    public GameObject objectTarget;
+    public GameObject popUpChooseObject;
     public List<GameObject> objects;
 
-    [Space(25)]
-    public Button cameraButton;
-    public Button chooseButton;
-    public GameObject popUpChooseObject;
-
-    [Space(25)]
-    public Sprite cameraSpawn;
-    public Sprite cameraDelete;
-
-    GameObject[] gameObjects;
-
-    void Update()
-    {
-        SetUserInterface();
-    }
-
-    public void SpawnObject()
-    {
-        if (!objectTarget.activeInHierarchy)
-        {   
-            objectTarget.SetActive(true);
-            cameraButton.GetComponent<Image>().sprite = cameraDelete;
-        }
-        else
-        {
-            objectTarget.SetActive(false);
-            cameraButton.GetComponent<Image>().sprite = cameraSpawn;
-            objectTarget = null;
-        }
-    }
-
-    public void ChooseObject(int index)
+    public void ChooseObject(GameObject obj)
     {
         for (int i = 0; i < objects.Count; i++)
-            if (index == i) 
-                objectTarget = objects[i];
-    }
-
-    public void SetUserInterface ()
-    {
-        for (int i = 0; i < planeTarget.transform.childCount; i++)
         {
-            if (planeTarget.transform.GetChild(i).gameObject.activeInHierarchy) 
-            {
-                cameraButton.GetComponent<Image>().sprite = cameraDelete;
-                break;
-            }
-            else
-            {
-                cameraButton.GetComponent<Image>().sprite = cameraSpawn;
-            }
+            if (obj == objects[i]) objects[i].SetActive(true);
+            else objects[i].SetActive(false);
         }
     }
 
-    public void CheckGroundPlane()
+    public void SetupPopUpChooseObject()
     {
-        gameObjects = FindObjectsOfType<GameObject>();
-
-        foreach (GameObject obj in gameObjects)
-        {
-            if (obj.name.Contains(planeUsed) && obj.transform.GetChild(0).GetComponent<MeshRenderer>().enabled)
-            {
-                isGrounded = true;
-                break;
-            }
-            else
-                isGrounded = false;
-        }
+        if (popUpChooseObject.activeInHierarchy) popUpChooseObject.SetActive(false);
+        else popUpChooseObject.SetActive(true);
     }
 }
