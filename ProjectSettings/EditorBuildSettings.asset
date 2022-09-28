@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/VideoScene.unity
     guid: 8e7b688460e781f4ab45bf295c856d71
   - enabled: 1
-    path: Assets/Scenes/ARScene1.unity
-    guid: 58dc9de8f505c5f4abc38b84645ac359
-  - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 16c466dc5fa8d1245bf58f550772cc8c
   m_configObjects:

@@ -85,6 +85,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "jillejr.newtonsoft.json-for-unity": {
+      "version": "file:C:/Users/farhn/Downloads/Compressed/Newtonsoft.Json-for-Unity-13.0.102",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
